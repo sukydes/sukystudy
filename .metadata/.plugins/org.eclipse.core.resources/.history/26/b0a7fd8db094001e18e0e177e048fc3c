@@ -1,0 +1,7 @@
+package base_java;
+
+public class PersonInfo {
+	public PersonInfo() {
+		
+	}
+}

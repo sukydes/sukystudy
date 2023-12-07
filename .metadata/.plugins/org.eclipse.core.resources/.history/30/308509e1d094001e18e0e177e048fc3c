@@ -1,0 +1,21 @@
+package base_java;
+
+public class Management {
+	public static void main(String[] args) {
+		//인사관리를 한 명이 '직접'하는 형태-- 사장님이 노트에다가 끄적이는 수준
+		
+		int level = 5;
+		PersonInfo firstP = new PersonInfo("김시은", 15);
+		PersonInfo secondP = new PersonInfo("홍길동", 20, "", "", "", "");
+		PersonInfo thirdP = new PersonInfo("김상원", 55, "3838");
+		
+		BankAccount firstA = new BankAccount("김시은", "우리은행", "1002-****");
+		BankAccount secondA = new BankAccount("홍길동", "카카오뱅크", "9999-****");
+		BankAccount thirdA = new BankAccount("김상원", "신한은행", "1219-****");
+		
+		//firstP.personInfo();
+		//firstA.accountInfo();
+		
+		System.out.println("3번째 신입사원 사번:" + thirdP.getP_num());
+	}
+}

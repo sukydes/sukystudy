@@ -1,0 +1,83 @@
+package base_java;
+
+/*
+ * 께좌
+ */
+public class BankAccount{
+	private String name = "";
+	private String bankName = "";
+	private String account = "";
+	private int baseSalary = 0;
+	private int salary = 0;
+	private String desc = "";
+	
+	//생성자
+	public BankAccount(String name, String bankName, String account) {
+		this.name = name;
+		this.bankName = bankName;
+		this.account = account;
+	}
+	
+	//GETTER
+	public String getName(){
+		return name;
+	}
+	public String getBankName(){
+		return this.bankName;
+	}
+	public String getAccount(){
+		return account;
+	}
+	public int getBaseSalary(){
+		return baseSalary;
+	}
+	public int getSalary(){
+		return salary;
+	}
+	public String getDesc(){
+		return desc;
+	}
+
+
+	//setter
+	public void setName(String name){
+		this.name = name;
+	}
+	public String setBankName(String bankName){
+		this.bankName = bankName;
+		return this.bankName;
+	}
+	public void setAccount(String account){
+		this.account= account;
+	}
+	public void setDesc(String desc){
+		this.desc = desc;
+	}
+	public void setBaseSalary(int baseSalary){
+		this.baseSalary = baseSalary;
+	}
+	public void setSalary(int salary){
+		this.salary = salary;
+	}
+	
+	
+	
+	//월급여
+	public void monthSalary(int month) {
+		int total = this.baseSalary + month;	// 총급여
+		this.salary = total;
+	}
+	
+	//이달의 급여 정보
+	public int[] salaryInfo() {
+		
+	}
+	
+	
+	//계좌 설계 정보
+	public void accountInfo() {
+		//System.out.println("name" + name + ", account:" + account );
+	}
+	
+	//돈 받자
+}

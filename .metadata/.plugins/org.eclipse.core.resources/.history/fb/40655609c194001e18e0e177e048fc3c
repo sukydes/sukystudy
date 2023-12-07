@@ -1,0 +1,36 @@
+package base_java;
+
+public class PersonInfo {
+	String name ="";
+	String bankName ="";
+	int age = 0;
+	String gender = "";
+	String address = "";
+	String desc = "";
+	
+	public PersonInfo(String name, int age, String bankName, String gender, String address, String desc) {
+		this.name=name;
+		this.age=age;
+		this.gender=gender;
+		this.address=address;
+		this.desc=desc;
+		System.out.println(name + "/" + age + "/" + gender + "/" + address + "/" + desc);
+	}
+	public PersonInfo(String name,  int age) {
+		this.name=name;
+		this.age=age;
+		System.out.println(name + "/" + age);
+	}
+	public PersonInfo(String bankName, String gender, String address, String desc) {
+		this.gender=gender;
+		this.address=address;
+		this.desc=desc;
+		System.out.println(gender + "/" + address + "/" + desc);
+	}
+
+	public void accountInfo() {
+		System.out.println("name" + this.name + ", age" + this.age );
+	}
+	
+	
+}

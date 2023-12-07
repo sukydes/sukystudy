@@ -1,0 +1,109 @@
+package base_java;
+
+public class PersonInfo {
+	public String name ="";
+	public String bankName ="";
+	public int age = 0;
+	public String gender = "";
+	public String address = "";
+	public String desc = "";
+	private String p_num = "";
+	
+	public PersonInfo(String name, int age, String bankName, String gender, String address, String desc) {
+		this.name=name;
+		this.age=age;
+		this.gender=gender;
+		this.address=address;
+		this.desc=desc;
+		//System.out.println(name + "/" + age + "/" + gender + "/" + address + "/" + desc);
+	}
+	
+	public PersonInfo(String name,  int age) {
+		this.name=name;
+		this.age=age;
+		//System.out.println(name + "/" + age);
+	}
+	
+	public PersonInfo(String name,  int age, String p_num) {
+		this.name=name;
+		this.age=age;
+		this.p_num=p_num;
+		//System.out.println(name + "/" + age);
+	}
+	
+	public PersonInfo(String bankName, String gender, String address, String desc) {
+		this.gender=gender;
+		this.address=address;
+		this.desc=desc;
+		//System.out.println(gender + "/" + address + "/" + desc);
+	}
+
+	//getter -> private전달
+	public String getP_num(){
+		return this.p_num;
+	}
+	//getter -> private전달
+	public String getName(){
+		return this.name;
+	}
+	//getter -> private전달
+	public String getBankName(){
+		return this.bankName;
+	}
+	//getter -> private전달
+	public int getAge(){
+		return this.age;
+	}
+	//getter -> private전달
+	public String getGender(){
+		return this.gender;
+	}
+	//getter -> private전달
+	public String getAddress(){
+		return this.address;
+	}
+	//getter -> private전달
+	public String getDesc(){
+		return this.desc;
+	}
+	
+	
+	public String setP_num(String p_num) {
+		this.p_num = p_num;
+		return this.p_num;
+	}
+	//setter -> private전달
+	public String setName(){
+		return this.name;
+	}
+	//setter -> private전달
+	public String setBankName(){
+		return this.bankName;
+	}
+	//setter -> private전달
+	public int setAge(){
+		return this.age;
+	}
+	//setter -> private전달
+	public String setGender(){
+		return this.gender;
+	}
+	//setter -> private전달
+	public String setAddress(){
+		return this.address;
+	}
+	//getter -> private전달
+	public String setDesc(){
+		return this.desc;
+	}
+	
+	
+	public void personInfo() {
+		System.out.println("--------------------");
+		System.out.println("| name: " + getName());
+		System.out.println("| age: " + getAge() );
+		System.out.println("--------------------");
+	}
+	
+	
+}

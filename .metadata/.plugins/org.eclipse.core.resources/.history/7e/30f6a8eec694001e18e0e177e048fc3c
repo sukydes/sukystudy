@@ -1,0 +1,16 @@
+package base_java;
+
+public class Management {
+	public static void main(String[] args) {
+		
+		PersonInfo firstP = new PersonInfo("김시은", 15);
+		PersonInfo secondP = new PersonInfo("홍길동", 20, "", "", "", "");
+		PersonInfo thirdP = new PersonInfo("김상원", 55, "", "", "", "");
+		
+		BankAccount firstA = new BankAccount("김시은", "우리은행", "1002-****");
+		BankAccount secondA = new BankAccount("홍길동", "카카오뱅크", "9999-****");
+		BankAccount thirdA = new BankAccount("김상원", "신한은행", "1219-****");
+		
+		firstP.personInfo();
+	}
+}

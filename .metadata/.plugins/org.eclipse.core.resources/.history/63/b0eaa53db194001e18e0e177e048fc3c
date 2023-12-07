@@ -1,0 +1,14 @@
+package base_java;
+
+public class PersonInfo {
+	String name ="";
+	int age = 0;
+	String gender = "";
+	String addres = "";
+	String desc = "";
+	
+	public PersonInfo() {
+		
+	}
+	
+}
